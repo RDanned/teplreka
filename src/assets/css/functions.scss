@@ -1,0 +1,46 @@
+$fontWhite: #FFFFFF;
+$fontBlack: #121715;
+$white: #FFFFFF;
+$gray: #CFCFCF;
+$grayStroke: #F1F1F1;
+$lightOrange: #F4A62F;
+
+$midDesktopWidth: 1440px;
+$smallDesktopWidth: 1280px;
+$tabWidth: 768px;
+$midPhoneWidth: 576px;
+$phoneWidth: 320px;
+
+@mixin adaptive-line-height() {
+  line-height: 25px;
+
+  @media screen and (min-width: ($midPhoneWidth + 1px)) {
+    line-height: 30px;
+  }
+}
+
+@mixin adaptive-font() {
+  font-size: 16px;
+  font-weight: 400;
+
+  @media screen and (min-width: ($midPhoneWidth + 1px)) {
+    font-size: 18px;
+  }
+}
+
+@mixin adaptive-section-title-font(){
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+
+  @media screen and (min-width: ($midPhoneWidth + 1px)) {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+@mixin xs {
+  @media screen and (min-width: ($midPhoneWidth + 1px)) {
+    @content;
+  }
+}
