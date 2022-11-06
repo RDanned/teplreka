@@ -1,0 +1,75 @@
+.slider {
+  position: relative;
+}
+
+.slider-arrow {
+  width: 32px;
+  height: 32px;
+
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  svg {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  @include xs {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.slider-arrow_left {
+  transform: rotate(-180deg) translate(50%, 50%);
+    left: 30px;
+
+  @include xs {
+    left: -50px;
+  }
+}
+
+.slider-arrow_right {
+  right: 0;
+
+  @include xs {
+    right: 20px;
+  }
+}
+
+.slider-arrow_inactive {
+  path { fill: $gray; }
+  rect { stroke: $grayStroke; }
+}
+
+.slider-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 205px;
+
+  @include xs {
+    width: 340px;
+  }
+}
+
+.slider .slide {
+
+  &_inactive {
+    margin-left: 100px;
+
+    path {
+      fill: $gray;
+    }
+  }
+
+  svg {
+    width: 100%;
+    max-height: 100%;
+  }
+}

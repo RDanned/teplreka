@@ -1,0 +1,82 @@
+.brands {
+  .section-top {
+    background-image: url('../img/brands/brands-banner.png');
+    height: 260px;
+
+    @include xs {
+      height: auto;
+    }
+  }
+
+  .section-title {
+    top: 110px;
+    left: 24px;
+
+    @include xs {
+      width: 200px;
+      text-indent: -1.6em;
+      padding-left: 1.2em;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 220px;
+    }
+  }
+
+  .section-description {
+    margin-top: 75px;
+  }
+
+  .section-bot {
+    padding: 45px 24px 70px 24px;
+
+    @include xs {
+      padding: 130px 16% 300px 10%;
+    }
+  }
+
+  .section-more-btn {
+    margin-top: 90px;
+  }
+
+  .brands-bg {
+    position: absolute;
+    z-index: -100;
+    bottom: 0;
+    right: 10%;
+  }
+
+  .slider {
+
+    @include xs {
+      width: 340px;
+      height: 80px;
+    }
+
+    .slider-list {
+      margin: 0 auto;
+
+      @include xs {
+        margin: 0;
+      }
+    }
+
+    .slide {
+
+      width: 205px;
+      height: 45px;
+
+      @include xs {
+        width: 340px;
+        height: 80px;
+      }
+
+      &_inactive {
+        display: none;
+
+        @include xs {
+          display: block;
+        }
+      }
+    }
+  }
+}
