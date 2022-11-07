@@ -71,25 +71,3 @@
     </div>
   </section>
 </template>
-<script setup>
-import PlayBtn from '@/components/PlayBtn'
-
-const aboutTableItems = [
-  {
-    left: '4',
-    right: 'региона выращивания'
-  },
-  {
-    left: '60 га',
-    right: 'общая площадь теплиц'
-  },
-  {
-    left: '1 300',
-    right: 'сотрудников'
-  },
-  {
-    left: '55 000',
-    right: 'тонн продукции в год'
-  },
-]
-</script>

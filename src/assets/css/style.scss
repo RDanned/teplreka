@@ -3,9 +3,14 @@
 @import "slider";
 @import "about";
 @import "brands";
+@import "complex";
 
 * {
   font-family: 'TT Norms', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -136,6 +141,14 @@
   @include xs {
     background: none;
     margin: -15px auto 0;
+
+    //animation: flying 0.9s ease-in-out infinite;
+    //animation-direction: alternate-reverse;
+  }
+
+  @keyframes flying {
+    from { margin-top: -15px; }
+    to { margin-top: -5px; }
   }
 }
 

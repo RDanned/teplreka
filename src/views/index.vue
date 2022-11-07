@@ -6,6 +6,7 @@
       <div class="page-content">
         <about-section />
         <brands-section />
+        <complex-section />
       </div>
     </main>
   </div>
@@ -16,4 +17,5 @@ import PageHeader from '@/components/PageHeader'
 import PageSidebar from '@/components/PageSidebar'
 import AboutSection from '@/components/Sections/AboutSection'
 import BrandsSection from '@/components/Sections/BrandsSection'
+import ComplexSection from '@/components/Sections/ComplexSection'
 </script>

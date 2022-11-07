@@ -35,14 +35,21 @@
   }
 
   .section-more-btn {
-    margin-top: 90px;
+    @include xs {
+      margin-top: 90px;
+    }
   }
 
   .brands-bg {
+    display: none;
     position: absolute;
     z-index: -100;
     bottom: 0;
     right: 10%;
+
+    @include xs {
+      display: block;
+    }
   }
 
   .slider {

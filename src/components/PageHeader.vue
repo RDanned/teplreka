@@ -21,9 +21,9 @@
           О компании
         </a>
       </div>
-      <div class="header-anchor">
+      <a href="#about" class="header-anchor">
         <img :src="require('@/assets/img/anchor.svg')" alt="">
-      </div>
+      </a>
     </div>
   </header>
 </template>
